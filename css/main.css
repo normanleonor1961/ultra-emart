@@ -8,6 +8,33 @@
 body {
     font-family: var(--sm-font);
 }
+
+.btn:not(.nav-btns button) {
+    background-color: white;
+    color: rgb(85, 85, 85);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+}
+
+.btn:not(.nav-btns button):hover{
+    background: var(--pink);
+    color: white;
+    border: var(--pink);
+}
+
+.title h2::before{
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--pink);
+    left:  -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
 /* Navbar */
 .navbar-brand img{
     width: 30px;
@@ -38,5 +65,31 @@ body {
 
 /* ------ HERO ----- */
 #hero{
-    background: url(../images/banner-img-1.jpg) top/cover;
+    background: url(/images/banner-img-1.jpg) top/cover;
+}
+
+.carousel-inner h1{
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+
+.carousel-item .btn{
+    border-color: White !important;
+}
+
+/* -------- Collection ------ */
+
+.active-filter-btn{
+    background-color: var(--pink) !important;
+    color: white !important;
+    border-color: var(--pink) !important;
+
+}
+
+.collection-img span{
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
 }
